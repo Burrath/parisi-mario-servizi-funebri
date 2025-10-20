@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { Phone, Mail, Cross } from "lucide-react";
+import { Phone, Mail } from "lucide-react";
+import logoImage from "@/assets/logo.png";
 
 export function Header() {
   return (
@@ -10,11 +11,11 @@ export function Header() {
           <div className="flex items-center space-x-4">
             <div className="flex items-center space-x-1">
               <Phone className="h-3 w-3" />
-              <span>095 93 88 11</span>
+              <a href="tel:+393484191693" className="hover:text-primary transition-colors">+39 348 419 1693</a>
             </div>
             <div className="flex items-center space-x-1">
               <Mail className="h-3 w-3" />
-              <span>info@parisimario.com</span>
+              <a href="mailto:info@parisimario.com" className="hover:text-primary transition-colors">info@parisimario.com</a>
             </div>
           </div>
           <div className="hidden md:block">
@@ -24,30 +25,24 @@ export function Header() {
 
         {/* Main navigation */}
         <div className="flex items-center justify-between py-4">
-          <div className="flex items-center space-x-2">
-            <div className="h-8 w-8 rounded bg-gradient-to-br from-gray-600 to-gray-800 flex items-center justify-center">
-              <Cross className="h-5 w-5 text-white" />
-            </div>
-            <div>
-              <h1 className="text-xl font-bold">Parisi Mario</h1>
-              <p className="text-xs text-muted-foreground">Servizi Funebri</p>
-            </div>
+          <div className="flex items-center">
+            <img src={logoImage} alt="Parisi Mario Logo" className="h-10 w-auto" />
           </div>
 
           <nav className="hidden md:flex items-center space-x-6">
-            <a href="#home" className="text-sm font-medium hover:text-primary transition-colors">
+            <a href="#home" className="text-sm font-medium hover:text-primary transition-colors scroll-smooth">
               Home
             </a>
-            <a href="#chi-siamo" className="text-sm font-medium hover:text-primary transition-colors">
+            <a href="#chi-siamo" className="text-sm font-medium hover:text-primary transition-colors scroll-smooth">
               Chi Siamo
             </a>
-            <a href="#servizi" className="text-sm font-medium hover:text-primary transition-colors">
+            <a href="#servizi" className="text-sm font-medium hover:text-primary transition-colors scroll-smooth">
               Servizi
             </a>
-            <a href="#pompe-funebri" className="text-sm font-medium hover:text-primary transition-colors">
+            <a href="#pompe-funebri" className="text-sm font-medium hover:text-primary transition-colors scroll-smooth">
               Pompe Funebri
             </a>
-            <a href="#contatti" className="text-sm font-medium hover:text-primary transition-colors">
+            <a href="#contatti" className="text-sm font-medium hover:text-primary transition-colors scroll-smooth">
               Contatti
             </a>
           </nav>

@@ -108,15 +108,15 @@ export function Contact() {
                 <div className="space-y-3">
                   <div className="flex items-center space-x-3">
                     <Phone className="h-4 w-4 text-muted-foreground" />
-                    <span className="font-medium">095 93 88 11</span>
+                    <a href="tel:+393484191693" className="font-medium hover:text-primary transition-colors">+39 348 419 1693</a>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Mail className="h-4 w-4 text-muted-foreground" />
-                    <span className="font-medium">info@parisimario.com</span>
+                    <a href="mailto:info@parisimario.com" className="font-medium hover:text-primary transition-colors">info@parisimario.com</a>
                   </div>
                   <div className="flex items-center space-x-3">
                     <MessageCircle className="h-4 w-4 text-muted-foreground" />
-                    <span className="font-medium">WhatsApp disponibile</span>
+                    <a href="https://wa.me/393484191693" className="font-medium hover:text-primary transition-colors">WhatsApp disponibile</a>
                   </div>
                 </div>
               </CardContent>
@@ -154,13 +154,17 @@ export function Contact() {
                 7 giorni su 7. Siamo qui per supportarvi in ogni momento.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
-                <Button size="sm" className="flex-1">
-                  <Phone className="mr-2 h-3 w-3" />
-                  Chiama Ora
+                <Button size="sm" className="flex-1" asChild>
+                  <a href="tel:+393484191693">
+                    <Phone className="mr-2 h-3 w-3" />
+                    Chiama Ora
+                  </a>
                 </Button>
-                <Button size="sm" variant="outline" className="flex-1">
-                  <MessageCircle className="mr-2 h-3 w-3" />
-                  WhatsApp
+                <Button size="sm" variant="outline" className="flex-1" asChild>
+                  <a href="https://wa.me/393484191693">
+                    <MessageCircle className="mr-2 h-3 w-3" />
+                    WhatsApp
+                  </a>
                 </Button>
               </div>
             </div>

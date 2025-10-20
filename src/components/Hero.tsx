@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Cross, Shield, Clock, Heart } from "lucide-react";
+import heroImage from "@/assets/hero.png";
 
 export function Hero() {
   return (
@@ -54,14 +55,12 @@ export function Hero() {
           </div>
 
           <div className="relative">
-            <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary/20 to-gray-600/20 flex items-center justify-center">
-              <div className="text-center space-y-4">
-                <div className="h-24 w-24 mx-auto rounded-full bg-primary/20 flex items-center justify-center">
-                  <Cross className="h-12 w-12 text-primary" />
-                </div>
-                <h3 className="text-xl font-semibold">Servizi Funebri</h3>
-                <p className="text-muted-foreground">Con rispetto e professionalità</p>
-              </div>
+            <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
+              <img 
+                src={heroImage} 
+                alt="Parisi Mario Servizi Funebri" 
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
