@@ -1,10 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
-import { Checkbox } from "@/components/ui/checkbox";
-import { Phone, Mail, MapPin, Clock, Send, MessageCircle } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react";
 
 export function Contact() {
   return (
@@ -18,68 +14,9 @@ export function Contact() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-          {/* Contact Form */}
-          <Card className="shadow-lg">
-            <CardHeader>
-              <CardTitle className="text-2xl">Richiedi Informazioni</CardTitle>
-              <CardDescription>
-                Compila il form per ricevere informazioni sui nostri servizi
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="space-y-6">
-              <div className="grid grid-cols-2 gap-4">
-                <div className="space-y-2">
-                  <Label htmlFor="nome">Nome *</Label>
-                  <Input id="nome" placeholder="Il tuo nome" />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="cognome">Cognome *</Label>
-                  <Input id="cognome" placeholder="Il tuo cognome" />
-                </div>
-              </div>
-
-              <div className="space-y-2">
-                <Label htmlFor="telefono">Numero di telefono *</Label>
-                <Input id="telefono" placeholder="333 123 4567" />
-              </div>
-
-              <div className="space-y-2">
-                <Label htmlFor="email">Indirizzo E-mail</Label>
-                <Input id="email" type="email" placeholder="la-tua-email@esempio.com" />
-              </div>
-
-              <div className="space-y-2">
-                <Label htmlFor="messaggio">Messaggio</Label>
-                <Textarea 
-                  id="messaggio" 
-                  placeholder="Descrivi le tue esigenze..."
-                  className="min-h-[120px]"
-                />
-              </div>
-
-              <div className="flex items-start space-x-2">
-                <Checkbox id="privacy" />
-                <Label htmlFor="privacy" className="text-sm leading-relaxed">
-                  Acconsento al trattamento dei dati personali per essere ricontattato per informazioni sui servizi. (*)
-                </Label>
-              </div>
-
-              <div className="flex flex-col sm:flex-row gap-3">
-                <Button size="lg" className="flex-1 group">
-                  <Send className="mr-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                  Invia Richiesta
-                </Button>
-                <Button size="lg" variant="outline" className="flex-1">
-                  <MessageCircle className="mr-2 h-4 w-4" />
-                  WhatsApp
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
-
+        <div className="max-w-4xl mx-auto">
           {/* Contact Info */}
-          <div className="space-y-6">
+          <div className="grid md:grid-cols-2 gap-8">
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center">

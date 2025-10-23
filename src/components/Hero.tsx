@@ -17,6 +17,9 @@ export function Hero() {
                 Dal 1954 al servizio delle famiglie siciliane con rispetto, 
                 dignità e professionalità in ogni momento difficile.
               </p>
+              <p className="text-sm text-primary font-medium">
+                📍 Serviamo Catania e tutta la provincia
+              </p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
