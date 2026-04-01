@@ -90,7 +90,7 @@ export function Footer() {
               <p className="mt-1">Dal 1954 al servizio delle famiglie siciliane</p>
             </div>
             <div className="flex space-x-6 text-sm">
-              <a href="#" className="text-gray-400 hover:text-primary transition-colors">Privacy Policy</a>
+              <a href="/privacy-policy" className="text-gray-400 hover:text-primary transition-colors">Privacy Policy</a>
               <a href="#" className="text-gray-400 hover:text-primary transition-colors">Termini di Servizio</a>
               <a href="#" className="text-gray-400 hover:text-primary transition-colors">Cookie Policy</a>
             </div>
